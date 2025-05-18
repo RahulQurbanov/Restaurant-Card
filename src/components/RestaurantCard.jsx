@@ -1,0 +1,12 @@
+export default function RestaurantCard({name,cuisine,rating,imageUrl}) {
+    return (
+        <div className="card">
+          <img src={imageUrl} alt={name} className="card-image" />
+          <div className="card-body">
+            <h2 className="card-title">{name}</h2>
+            <p className="card-cuisine">{cuisine}</p>
+            <p className="card-rating">⭐ {rating}</p>
+          </div>
+        </div>
+      );
+};
